@@ -1,21 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("nav ul li a");
-    const content = document.getElementById("content");
+document.addEventListener('DOMContentLoaded', function () {
+    // Funkcja do ustawienia trybu ciemnego na podstawie Local Storage
+function applyDarkModePreference() {
+    const darkModeEnabled = localStorage.getItem('dark-mode') === 'true';
+    if (darkModeEnabled) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkmode_lightmode').checked = true;
+    }
+}
 
-    links.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const page = link.getAttribute("data-page");
+// Nasłuchiwanie na zmianę stanu przełącznika
+document.getElementById('darkmode_lightmode').addEventListener('change', function () {
+    const isDarkMode = this.checked;
+    document.body.classList.toggle('dark-mode', isDarkMode);
+    localStorage.setItem('dark-mode', isDarkMode); // Zapisz stan w Local Storage
+});
 
-            // Załaduj odpowiednią treść
-            fetch(`/HTML/${page}.html`)
-                .then(response => response.text())
-                .then(data => {
-                    content.innerHTML = data;
-                })
-                .catch(error => {
-                    content.innerHTML = "<p>Błąd ładowania treści.</p>";
-                });
-        });
-    });
+// Wywołaj funkcję przy ładowaniu strony
+applyDarkModePreference();
 });
