@@ -6,17 +6,17 @@
         }
         
         body {
-            background-color: #ffffff;
-            color: #444;
+            background-color: #F2D6BF;
+            color: #3E312b;
         }
         body.dark-mode {
-            background-color: #444;
-            color: #fff;
+            background-color: #3E312b;
+            color: #F2D6BF;
         }
 
         header {
             background-color: #ffcce6;
-            background-image: url('../Dodatki/HEADER.png');
+            background-image: url('../Dodatki/polewa_d2.png');
             min-height: 350px;
             background-size: cover;
             background-position: center;
@@ -34,7 +34,7 @@
         }
         body.dark-mode header {
             background-color: #4444;
-            background-image: url("../Dodatki/HEADER-DARK.png");
+            background-image: url("../Dodatki/polewa_n2.png");
         }
 
         nav ul {
@@ -48,19 +48,19 @@
         }        
         nav ul li a {
             text-decoration: none;
-            color: #d23669;
+            color: #ae61d8;
             font-weight: bold;
             font-size: 1.1rem;
             transition: color 0.3s;
         }      
         nav ul li a:hover {
-            color: #ff6b9d;
+            color: #7c88d8;
         }
 
 
         h1 {
             font-size: 2.5rem;
-            color: #d23669;
+            color: #ae61d8;
             transition: color 0.3s;
             text-decoration: none;
             margin-top : 95px;
@@ -70,18 +70,18 @@
         }
         h1 a {
             text-decoration: none;
-            color: #d23669;
+            color: #ae61d8;
             font-weight: bold;
         }
         h1:hover {
-            color: #ff6b9d;
+            color: #7c88d8;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background-color: #ffcce6;
-            color: #d23669;
+            color: #ae61d8;
             margin-top: 50px;
         }
         body.dark-mode footer {
