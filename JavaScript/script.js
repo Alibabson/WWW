@@ -18,3 +18,26 @@ document.getElementById('darkmode_lightmode').addEventListener('change', functio
 // Wywołaj funkcję przy ładowaniu strony
 applyDarkModePreference();
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const galleryImages = document.querySelectorAll('.gallery-grid img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('close');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.dataset.full;
+            lightbox.classList.remove('hidden');
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        lightbox.classList.add('hidden');
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.classList.add('hidden');
+        }
+    });
+});
