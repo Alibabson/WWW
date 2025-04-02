@@ -6,17 +6,17 @@
         }
         
         body {
-            background-color: #F2D6BF;
+            background-color: #ffffff;
             color: #3E312b;
         }
         body.dark-mode {
-            background-color: #3E312b;
+            background-color: #2d2826;
             color: #F2D6BF;
         }
 
         header {
             background-color: #ffffff;
-            background-image: url('../Dodatki/polewa_Day.png');
+            background-image: url('../Dodatki/polewa_Tag.png');
             min-height: 350px;
             background-size: cover;
             background-position: center;
@@ -33,8 +33,8 @@
             align-items: center;
         }
         body.dark-mode header {
-            background-color: #4444;
-            background-image: url("../Dodatki/polewa_Night.png");
+            background-color: #3E312b;
+            background-image: url("../Dodatki/polewa_Nacht.png");
         }
 
         nav ul {
@@ -54,9 +54,14 @@
             transition: color 0.3s;
         }      
         nav ul li a:hover {
-            color: #7c88d8;
+            color: #ffffff;
         }
-
+        body.dark-mode nav ul li a{
+            color: #5a296d;
+        }
+        body.dark-mode nav ul li a:hover {
+            color: #ac96a7;
+        }
 
         h1 {
             font-size: 2.5rem;
@@ -73,6 +78,9 @@
             color: #ae61d8;
             font-weight: bold;
         }
+        body.dark-mode h1 a img{
+            content: url("../Dodatki/logoN.png");
+        }
         h1:hover {
             color: #7c88d8;
         }
@@ -85,7 +93,7 @@
             margin-top: 50px;
         }
         body.dark-mode footer {
-            background-color: #444;
+            background-color: #3E312b;
             color: #fff;
         }
               
@@ -112,7 +120,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #d11097;
+            background-color: #ac55cd;
             transition: 0.4s;
             border-radius: 25px;
         }      
@@ -145,13 +153,13 @@
             box-shadow: 0 2px 15px rgba(0,0,0,0.05);
         }
         body.dark-mode section {
-            background-color: #444;
+            background-color: #3E312b;
             color: #fff;
             box-shadow: 0 2px 15px rgba(0,0,0,0.02);
         }
         
         h2 {
-            color: #d23669;
+            color: #ac55cd;
             margin-bottom: 15px;
         }       
         p {
