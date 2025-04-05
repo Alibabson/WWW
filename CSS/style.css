@@ -53,11 +53,11 @@
             font-size: 1.1rem;
             transition: color 0.3s;
         }      
-        nav ul li a:hover {
-            color: #ffffff;
-        }
         body.dark-mode nav ul li a{
             color: #5a296d;
+        }
+        nav ul li a:hover {
+            color: #ffffff;
         }
         body.dark-mode nav ul li a:hover {
             color: #ac96a7;
