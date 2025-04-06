@@ -3,27 +3,27 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Ink Free';
+            overflow-x: hidden;
         }
         
         body {
             background-color: #ffffff;
             color: #3E312b;
+            font-size: 20px;
         }
-        body.dark-mode {
-            background-color: #2d2826;
-            color: #F2D6BF;
-        }
+        
 
         header {
             background-color: #ffffff;
             background-image: url('../Dodatki/polewa_Tag.png');
-            min-height: 350px;
-            background-size: cover;
-            background-position: center;
-            min-height: 600px;
+            min-height: 650px;
+            background-size: 100% 50%;
+            background-position: center top;
+
             background-repeat: no-repeat;
             padding: 20px 0;
             text-align: center;
+            animation: stretch 2s ease-out forwards;
         }        
         .header-content {
             max-width: 1200px;
@@ -32,10 +32,7 @@
             flex-direction: column;
             align-items: center;
         }
-        body.dark-mode header {
-            background-color: #3E312b;
-            background-image: url("../Dodatki/polewa_Nacht.png");
-        }
+        
 
         nav ul {
             display: flex;
@@ -50,18 +47,14 @@
             text-decoration: none;
             color: #ae61d8;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             transition: color 0.3s;
         }      
-        body.dark-mode nav ul li a{
-            color: #5a296d;
-        }
+        
         nav ul li a:hover {
             color: #ffffff;
         }
-        body.dark-mode nav ul li a:hover {
-            color: #ac96a7;
-        }
+        
 
         h1 {
             font-size: 2.5rem;
@@ -78,9 +71,7 @@
             color: #ae61d8;
             font-weight: bold;
         }
-        body.dark-mode h1 a img{
-            content: url("../Dodatki/logoN.png");
-        }
+        
         h1:hover {
             color: #7c88d8;
         }
@@ -92,57 +83,14 @@
             color: #ae61d8;
             margin-top: 50px;
         }
-        body.dark-mode footer {
-            background-color: #3E312b;
-            color: #fff;
-        }
+       
               
         main {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
         }     
-        .przelacznik{
-            position: absolute;
-            top: 10px;
-            right: 20px;
-        }
-        .switch{
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 25px;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ac55cd;
-            transition: 0.4s;
-            border-radius: 25px;
-        }      
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 19px;
-            width: 19px;
-            left: 3px;
-            bottom: 3px;
-            background-color: rgb(255, 255, 255);
-            transition: 0.4s;
-            border-radius: 50%;
-        }
-        
-        input:checked + .slider {
-            background-color: #333;
-        }
-        
-        input:checked + .slider:before {
-            transform: translateX(25px);
-        }
+
 
 
         section {
@@ -152,18 +100,14 @@
             border-radius: 50px;
             box-shadow: 0 2px 15px rgba(0,0,0,0.05);
         }
-        body.dark-mode section {
-            background-color: #3E312b;
-            color: #fff;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.02);
-        }
+        
         
         h2 {
             color: #ac55cd;
             margin-bottom: 15px;
         }       
         p {
-            line-height: 1.6;
+            line-height: 2;;
         }
     
         
@@ -176,48 +120,13 @@
                 margin: 0 10px;
             }
         }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+
+        @keyframes stretch {
+            0% {
+                background-size: 100% 50%;
+            }
+            100% {
+                background-size: 100% 100%;
         }
+    }
         
-        .gallery-grid img {
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        
-        .gallery-grid img:hover {
-            transform: scale(1.1);
-        }
-        
-        #lightbox {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        
-        #lightbox.hidden {
-            display: none;
-        }
-        
-        #lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-        }
-        
-        #close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 2rem;
-            color: white;
-            cursor: pointer;
-        }

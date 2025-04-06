@@ -1,0 +1,89 @@
+.przelacznik{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ac55cd;
+    transition: 0.4s;
+    border-radius: 25px;
+}      
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+/*///////////////////////////////////////////*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox.hidden {
+    display: none;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
