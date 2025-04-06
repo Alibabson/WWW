@@ -17,13 +17,13 @@
             background-color: #ffffff;
             background-image: url('../Dodatki/polewa_Tag.png');
             min-height: 650px;
-            background-size: 100% 50%;
+            background-size: 100% 80%;
             background-position: center top;
 
             background-repeat: no-repeat;
             padding: 20px 0;
             text-align: center;
-            animation: stretch 2s ease-out forwards;
+            animation: stretch 6s ease-out forwards;
         }        
         .header-content {
             max-width: 1200px;
@@ -94,7 +94,7 @@
 
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 100px;
             padding: 20px;
             background-color: rgb(251, 228, 249);
             border-radius: 50px;
@@ -109,7 +109,25 @@
         p {
             line-height: 2;;
         }
-    
+        p a {
+            color: #cc9de6;
+            text-decoration: none;
+        }
+        p a:hover {
+            color: #ffffff;
+        }
+
+        .Section_hidden {
+            opacity: 0; /* Element jest niewidoczny */
+            transform: translateY(50px); /* Przesunięcie w dół */
+            transition: all 0.8s ease-out; /* Płynne przejście */
+        }
+        
+        .Section_hidden.animate {
+            opacity: 1; /* Element staje się widoczny */
+            transform: translateY(0); /* Powrót do pierwotnej pozycji */
+        }
+        
         
         @media (max-width: 768px) {
             h1 {
@@ -123,10 +141,11 @@
 
         @keyframes stretch {
             0% {
-                background-size: 100% 50%;
+                background-size: 100% 80%;
             }
             100% {
                 background-size: 100% 100%;
         }
-    }
+        }
+
         
