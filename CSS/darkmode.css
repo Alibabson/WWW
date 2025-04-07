@@ -1,0 +1,32 @@
+body.dark-mode {
+    background-color: #2d2826;
+    color: #F2D6BF;
+}
+
+body.dark-mode header {
+    background-color: #2D2826;
+    background-image: url("../Dodatki/polewa_Nacht.png");
+}
+
+body.dark-mode nav ul li a{
+    color: #5a296d;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ac96a7;
+}
+
+body.dark-mode h1 a img{
+    content: url("../Dodatki/logoN.png");
+}
+
+body.dark-mode footer {
+    background-color: #3E312b;
+    color: #fff;
+}
+
+body.dark-mode section {
+    background-color: #3E312b;
+    color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.02);
+}

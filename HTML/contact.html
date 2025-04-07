@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cukrowy Kącik</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/darkmode.css">
+    <link rel="stylesheet" href="../CSS/funkcje.css">
+
+    <link rel="icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik">
+    <link rel="apple-touch-icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik"> 
     <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/przejscia.js"></script>
 </head>
 <body>
     <header>
@@ -14,13 +20,13 @@
             <nav>
                 <ul>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="events.html">Wydarzenia</a></li>
                     <li><a href="index.html">Strona główna</a></li>
                     <li><a href="gallery.html">Galeria</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
-            <h1><a href="index.html"><img src="../Dodatki/logo.png" width ="200" height="200" ></a></h1>
+            <h1><a href="index.html"><img src="../Dodatki/logo.png" width ="250" height="250" alt="logo firmy Cukrowy Kącik"></a></h1>
         </div>
         <div class="przelacznik">
             <label class="switch">
@@ -30,12 +36,17 @@
         </div>
     </header>
     <main>
-        <section id="contact">
-            <h2>Skontaktuj się z nami</h2>
-            <p>Adres: ul. Słodka 12, 00-001 Warszawa</p>
+        <section id="contact" class="Section_hidden">
+            <h2>Skontaktuj się z nami!</h2>
+            <p>Adres: ul. Babeczkowa 19, 20-401 Cukrowo</p>
             <p>Telefon: +48 123 456 789</p>
-            <p>Email: kontakt@cukrowykacik.pl</p>
-            <p style="margin-top: 15px;">Godziny otwarcia: Pon-Pt: 8:00-20:00, Sob-Nd: 9:00-18:00</p>
+            <p>Email: <a href="mailto:kontakt.cukrowykacik@gmail.com">kontakt.cukrowykacik@gmail.com</a></p>
+            <p style="margin-top: 15px;">Godziny otwarcia:</p>
+            <ul>
+                <li>Poniedziałek - Piątek: 8:00 - 20:00</li>
+                <li>Sobota: 9:00 - 18:00</li>
+                <li>Niedziela: 10:00 - 16:00</li>
+            </ul>
         </section>
 </main>
     <footer>

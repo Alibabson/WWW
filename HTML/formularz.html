@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz zgłoszeniowy</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/darkmode.css">
+    <link rel="stylesheet" href="../CSS/funkcje.css">
+
+    <link rel="icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik">
+    <link rel="apple-touch-icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik"> 
+    <script src="../JavaScript/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> FORMULARZ ZGŁOSZENIOWY</h1>
+        <h2>
+        <div class="form_header">
+                <a href="events.html">Powrót</a>
+        </div>
+        </h2>
+        <div class="przelacznik">
+            <label class="switch">
+                <input type="checkbox" id="darkmode_lightmode">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+    <main class="form_main">
+        <h2>Wypełnij formularz zgłoszeniowy</h2>
+        <p>Proszę wypełnić wszystkie wymagane pola.</p>
+
+    <form>
+        <label for="imie">Imie:</label><br>
+        <input type="text" id="imie" name="imie" placeholder="Jan"
+        autofocus required><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" id="nazwisko" name="nazwisko" placeholder="Kowalski"
+        autofocus required><br>
+        <label for="email">Adres E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="Jan.Kowalski@example.com"
+        autofocus required><br>
+        <label for="telefon">Numer Telefonu:</label><br>
+        <input type="tel" id="telefon" name="telefon" placeholder="123-123-123"
+        autofocus required><br>
+        <label for="data">Data Urodzenia:</label><br>
+        <input type="date" id="data" name="data" placeholder="1.01.2000"
+        autofocus required><br>
+
+        <label for="plec">Płeć: </label><br>
+        <input type="radio" id="kobieta" name="plec" value="kobieta" checked><label for="kobieta">Kobieta</label>
+        <input type="radio" id="mężczyzna" name="plec" value="mężczyzna"><label for="mężczyzna">Mężczyzna</label>
+        <input type="radio" id="inne" name="plec" value="inne"><label for="inne">Inne</label> <br>
+
+        <br>
+        <input type="checkbox" id="zgoda" name="zgoda" autofocus required>
+        <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych [...]</label><br>
+        
+        <label for="pora">Wybierz interesujący Ciebie dzień Pikniku:</label>
+        <select name="pora" id="pora" required>
+            <option value="" disabled selected>Wybierz dzień</option>
+            <option value="4">25 kwietnia 2025r.</option>
+            <option value="5">30 maja 2025r.</option>
+            <option value="6">27 czerwca 2025r.</option>
+            <option value="7">25 lipca 2025r.</option>
+            <option value="8">29 sierpnia 2025r.</option>
+            <option value="9">26 września 2025r.</option>
+            <option value="10">31 października 2025r.</option>
+            <option value="11">28 listopada 2025r.</option>
+            <option value="12">26 grudnia 2025r.</option>
+        </select><br>
+        <br><input type="submit" value="Prześlij">
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cukrowy Kącik. Wszelkie prawa zastrzeżone.</p>
+</body>
+</html>
