@@ -30,3 +30,10 @@ body.dark-mode section {
     color: #fff;
     box-shadow: 0 2px 15px rgba(0,0,0,0.02);
 }
+
+body.dark-mode .form_header a {
+    color: #5a296d;
+}
+body.dark-mode .form_header a:hover {
+    color: #ac96a7;
+}
