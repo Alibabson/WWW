@@ -19,13 +19,12 @@
             min-height: 650px;
             background-size: 100% 80%;
             background-position: center top;
-
             background-repeat: no-repeat;
             padding: 20px 0;
             text-align: center;
             animation: stretch 6s ease-out forwards;
         }        
-        .header-content {
+        .header-text {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -71,10 +70,6 @@
             color: #ae61d8;
             font-weight: bold;
         }
-        
-        h1:hover {
-            color: #7c88d8;
-        }
 
         footer {
             text-align: center;
@@ -105,6 +100,7 @@
         h2 {
             color: #ac55cd;
             margin-bottom: 15px;
+            text-decoration: none;
         }       
         p {
             line-height: 2;;
@@ -117,31 +113,17 @@
             color: #ffffff;
         }
 
-        .Section_hidden {
-            opacity: 0; /* Element jest niewidoczny */
-            transform: translateY(50px); /* Przesunięcie w dół */
-            transition: all 0.8s ease-out; /* Płynne przejście */
+        .Ukryte {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
         }
         
-        .Section_hidden.animate {
-            opacity: 1; /* Element staje się widoczny */
-            transform: translateY(0); /* Powrót do pierwotnej pozycji */
+        .Ukryte.animacja {
+            opacity: 1;
+            transform: translateY(0);
         }
-       
-        .form_header a{
-            font-size: 2.5rem;
-            color: #ae61d8;
-            transition: color 0.3s;
-            text-decoration: none;
-            margin-top : 95px;
-            margin-bottom:20px;
-            text-align: center;
-            width: 100%;
-        }
-        .form_header a:hover {
-            color: #7c88d8;
-        }
-        
+           
         .form_main{
             margin: 0 auto;
             padding: 20px;
@@ -153,9 +135,23 @@
             width: 100%;
             padding: 12px;
             margin-bottom: 15px;
-            border: 2px solid #ae61d8;
-            border-radius: 8px;
+            border: 5px solid #ae61d8;
+            border-radius: 35px;
             background-color: #cc9de6;
+        }
+        .form_text {
+            font-size: 24px;
+            margin-bottom: 55px;
+            color: #ae61d8;
+            text-decoration: none;
+        }
+        .form_text a {
+            font-size: 50px;
+            text-decoration: none;
+            color:#ae61d8;
+        }
+        .form_text a:hover {
+            color: #ffffff;
         }
         form label{
             margin-right: 15px;

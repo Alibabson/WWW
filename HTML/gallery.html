@@ -10,12 +10,13 @@
 
     <link rel="icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik">
     <link rel="apple-touch-icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik"> 
+
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/galeria.js"></script>
 </head>
 <body>
     <header>
-        <div class="header-content">
+        <div class="header-text">
             <nav>
                 <ul>
                     <li><a href="menu.html">Menu</a></li>
@@ -25,14 +26,19 @@
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div class="logo">
             <h1><a href="index.html"><img src="../Dodatki/logo.png" width ="250" height="250" alt="Logo Firmy Cukrowy Kącik"></a></h1>
         </div>
+
         <div class="przelacznik">
             <label class="switch">
                 <input type="checkbox" id="darkmode_lightmode">
                 <span class="slider"></span>
             </label>
         </div>
+
     </header>
     <main>
         <section id="gallery">
@@ -46,12 +52,15 @@
                 <img src="../Dodatki/cake_unicorn.jpg" width="250" height="250" alt="Ciasto Jednorożec" data-full="../Dodatki/cake_unicorn.jpg">
                 <img src="../Dodatki/cake_cookie.PNG" width="250" height="250" alt="Ciasto Ciasteczkowy Potwór" data-full="../Dodatki/cake_cookie.PNG">
             </div>
+
             <div id="lightbox" class="hidden">
                 <span id="close">&times;</span>
                 <img id="lightbox-img" src="" alt="Full-size image">
             </div>
+
         </section>
-</main>
+    </main>
+
     <footer>
         <p>&copy; 2023 Cukrowy Kącik. Wszelkie prawa zastrzeżone.</p>
     </footer>
