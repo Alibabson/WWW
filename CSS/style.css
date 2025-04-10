@@ -16,7 +16,7 @@
         header {
             background-color: #ffffff;
             background-image: url('../Dodatki/polewa_dia4.png');
-            min-height: 650px;
+            min-height: 700px;
             background-size: 100% 80%;
             background-position: center top;
             background-repeat: no-repeat;
@@ -60,7 +60,7 @@
             color: #ae61d8;
             transition: color 0.3s;
             text-decoration: none;
-            margin-top : 95px;
+            margin-top : 40px;
             margin-bottom:20px;
             text-align: center;
             width: 100%;
@@ -84,9 +84,9 @@
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
+            margin-top: -250px;
         }     
-
-
+  
 
         section {
             margin-bottom: 100px;

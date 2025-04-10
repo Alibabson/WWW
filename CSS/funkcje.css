@@ -41,6 +41,9 @@ input:checked + .slider:before {
 }
 
 /*///////////////////////////////////////////*/
+.gallery {
+    margin-top: -50px;
+}
 
 .gallery-grid {
     display: grid;
