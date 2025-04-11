@@ -105,15 +105,15 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
-button img{
-    position: fixed;
+footer button {
+    position: absolute;
     bottom: 20px; 
     left: 20px; 
-    z-index: 9999; 
     background: none; 
     border: none; 
     cursor: pointer;
 }
+
 
 /*///////////////////////////////////////////*/
 .like {
@@ -127,6 +127,9 @@ button img{
     position: absolute;
     right: 20px;
     top: 20%;
+}
+.like:hover {
+    transform: scale(1.1); 
 }
 
 .like .serduszko {

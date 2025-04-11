@@ -22,7 +22,7 @@ body.dark-mode h1 a img{
 
 body.dark-mode footer {
     background-color: #3E312b;
-    color: #fff;
+    color: #8c54b4;
 }
 
 body.dark-mode .form_text a{
@@ -54,5 +54,16 @@ body.dark-mode section {
     color: #fff;
     box-shadow: 0 2px 15px rgba(0,0,0,0.02);
 }
-
+body.dark-mode .opis{
+    color: #8b4a89;
+}
+body.dark-mode .oferta li{
+    color: #8c54b4;
+}
+body.dark-mode h2{
+    color: #8c54b4;
+}
+body.dark-mode h3{
+    color: #8b4a89;
+}
 

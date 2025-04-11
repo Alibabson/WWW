@@ -14,6 +14,9 @@
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/przejscia.js"></script>
     <script src="../JavaScript/like.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -118,7 +121,7 @@
             </li>
     </section>
 
-    <section>
+    <section class="Ukryte">
         <h2>Cukierkowy Catering!</h2>
         <h3>Dowóz słodkości na każdą okazję:</h3>
         <ul class="oferta">
@@ -168,30 +171,54 @@
         </ul>
     </section>
 
-    <section>
+    <section class="Ukryte">
         <h2>Dodatki!</h2>
         <h3>Nie tylko cukier ważny - mamy o wiele więcej!</h3>
         <ul class="oferta">
-            <li>- Balony z helem <br>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button> 
+                - Balony z helem <br>
                 <div class="opis">Balony w różnych kolorach i kształtach, które dodadzą uroku każdej imprezie.</div>
             </li>
-            <li>- Dekoracje stołów  <br>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Dekoracje stołów  <br>
                 <div class="opis">Piękne dekoracje stołów na każdą okazję. Możliwość personalizacji.</div>
             </li>
-            <li>- Animator <br>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Animator <br>
                 <div class="opis">Animatorzy, którzy umilą czas dzieciom podczas imprez. Możliwość personalizacji.</div>
             </li>
-            <li>- Fotobudka  <br>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Fotobudka  <br>
                 <div class="opis">Fotobudka z różnymi rekwizytami, która zapewni świetną zabawę i pamiątkowe zdjęcia.</div>
             </li>
-            <li>- DJ <br>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - DJ <br>
                 <div class="opis">DJ, który zadba o odpowiednią atmosferę podczas imprezy. Możliwość personalizacji.</div>
             </li>
     </section>
     </main>
 
     <footer>
+        <button id="armata">
+            <img src="../Dodatki/armatka.png" width="100" height="100" alt="Aramtka">
+          </button>
         <p>&copy; 2025 Cukrowy Kącik. Wszelkie prawa zastrzeżone.</p>
     </footer>
+    <script src="../JavaScript/armata.js"></script>
 </body>
 </html>

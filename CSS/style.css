@@ -4,6 +4,7 @@
             box-sizing: border-box;
             font-family: 'Ink Free';
             overflow-x: hidden;
+            font-weight: bold;
         }
         
         body {
@@ -42,7 +43,7 @@
         }        
         nav ul li a {
             text-decoration: none;
-            color: #ae61d8;
+            color: #af5de5;
             font-weight: bold;
             font-size: 1.5rem;
             transition: color 0.3s;
@@ -68,9 +69,11 @@
         }
 
         footer {
+            position: relative;
+            overflow: visible;
             text-align: center;
             padding: 20px;
-            background-color: #ffcce6;
+            background-color: rgb(251, 228, 249);
             color: #ae61d8;
             margin-top: 50px;
         }
@@ -131,13 +134,14 @@
 
         h3{
             font-size: 35px;
+            color: #e874e7; 
         }
         .oferta{
             margin-top: 20px;
         }
         .oferta li{
             text-decoration: none;
-            color: #ae61d8;
+            color: #af5de5;
             overflow: visible;
             text-align: left;
             border-bottom: 1px solid #381a0c;
@@ -147,11 +151,10 @@
         }
         .opis{
             margin-top: 3px;
-            color:#ffcce6;
+            color:#e874e7;
             font-size:20px;
             margin-left:20px;
         }
-
         @keyframes stretch {
             0% {
                 background-size: 100% 80%;
