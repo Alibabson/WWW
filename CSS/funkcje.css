@@ -90,3 +90,24 @@ input:checked + .slider:before {
     color: white;
     cursor: pointer;
 }
+/*//////////////*/
+.Ukryte {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.Ukryte.animacja {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button img{
+    position: fixed;
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 9999; 
+    background: none; 
+    border: none; 
+    cursor: pointer;
+}

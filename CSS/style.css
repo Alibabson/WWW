@@ -12,7 +12,6 @@
             font-size: 20px;
         }
         
-
         header {
             background-color: #ffffff;
             background-image: url('../Dodatki/polewa_dia4.png');
@@ -32,7 +31,6 @@
             align-items: center;
         }
         
-
         nav ul {
             display: flex;
             justify-content: center;
@@ -48,13 +46,11 @@
             font-weight: bold;
             font-size: 1.5rem;
             transition: color 0.3s;
-        }      
-        
+        }            
         nav ul li a:hover {
             color: #ffffff;
         }
         
-
         h1 {
             font-size: 2.5rem;
             color: #ae61d8;
@@ -113,83 +109,6 @@
             color: #ffffff;
         }
 
-        .Ukryte {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .Ukryte.animacja {
-            opacity: 1;
-            transform: translateY(0);
-        }
-           
-        .form_main{
-            margin: 0 auto;
-            padding: 20px;
-            max-width: 1000px;
-            font-size: 24px;
-            box-sizing: border-box;
-        }
-        form {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 5px solid #ae61d8;
-            border-radius: 35px;
-            background-color: #cc9de6;
-        }
-        .form_text {
-            font-size: 24px;
-            margin-bottom: 55px;
-            color: #ae61d8;
-            text-decoration: none;
-        }
-        .form_text a {
-            font-size: 50px;
-            text-decoration: none;
-            color:#ae61d8;
-        }
-        .form_text a:hover {
-            color: #ffffff;
-        }
-        form label{
-            margin-right: 15px;
-            display: inline-block;
-        }
-        form input {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 2px solid #cc9de6;
-            border-radius: 8px;
-            background-color: #e3bbf8;
-        }
-        form input[type="radio"]    {
-            width: auto;
-            margin-right: 10px;
-            vertical-align: middle;
-            cursor: pointer;
-        }
-        form input[type="checkbox"] {
-            width: auto;
-            margin-right: 10px;
-            vertical-align: middle;
-            cursor: pointer;
-        }
-        select {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 2px solid #cc9de6;
-            border-radius: 8px;
-            background-color: #e3bbf8;
-            
-        }
-        select:focus{
-            border-color: #3fc4e2;
-        }
-
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -198,6 +117,15 @@
             nav ul li {
                 margin: 0 10px;
             }
+        }
+        .prawo{
+            text-align: left;
+        }
+        .lewo a{
+            text-decoration: none;
+            color: #ae61d8;
+            overflow: visible;
+            text-align: right;
         }
 
         @keyframes stretch {
