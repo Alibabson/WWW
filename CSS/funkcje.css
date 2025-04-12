@@ -139,3 +139,10 @@ footer button {
 .like.active {
     color: #ac55cd; 
 }
+.mapa{
+    margin-left:150px;
+}
+iframe{
+    border: #ac55cd 5px solid;
+    border-radius: 50px;
+}

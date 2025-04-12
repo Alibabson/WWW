@@ -135,12 +135,7 @@
         }
         .prawo{
             text-align: left;
-        }
-        .lewo a{
-            text-decoration: none;
-            color: #ae61d8;
-            overflow: visible;
-            text-align: right;
+            float:left;
         }
 
         h3{
@@ -166,6 +161,15 @@
             font-size:20px;
             margin-left:20px;
         }
+        .mapa{
+            float:right;
+            margin-left: 20px;
+        }
+        .Ukryte .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+
         @keyframes stretch {
             0% {
                 background-size: 100% 80%;
