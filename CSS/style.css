@@ -97,19 +97,30 @@
         
         
         h2 {
-            color: #ac55cd;
+            color: #af5de5;
             margin-bottom: 15px;
             text-decoration: none;
             font-size: 40px;
         }       
         p {
-            line-height: 2;;
+            line-height: 2;
+            color: #e874e7;
         }
         p a {
-            color: #cc9de6;
+            color: #af5de5;
             text-decoration: none;
         }
         p a:hover {
+            color: #ffffff;
+        }
+        ul li {
+            color: #af5de5;
+        }
+        h3 a {
+            color: #af5de5;
+            text-decoration: none;
+        }
+        h3 a:hover {
             color: #ffffff;
         }
 
