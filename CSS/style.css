@@ -11,6 +11,7 @@
             background-color: #ffffff;
             color: #3E312b;
             font-size: 20px;
+            overflow: visible;
         }
         
         header {
@@ -23,6 +24,10 @@
             padding: 20px 0;
             text-align: center;
             animation: stretch 6s ease-out forwards;
+            position: relative;
+            overflow: visible;
+            margin-bottom: 100px;
+            
         }        
         .header-text {
             max-width: 1200px;
@@ -68,15 +73,7 @@
             font-weight: bold;
         }
 
-        footer {
-            position: relative;
-            overflow: visible;
-            text-align: center;
-            padding: 20px;
-            background-color: rgb(251, 228, 249);
-            color: #ae61d8;
-            margin-top: 50px;
-        }
+
        
               
         main {
@@ -116,6 +113,10 @@
         ul li {
             color: #af5de5;
         }
+        h3{
+            font-size: 35px;
+            color: #e874e7; 
+        }
         h3 a {
             color: #af5de5;
             text-decoration: none;
@@ -124,25 +125,22 @@
             color: #ffffff;
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            nav ul li {
-                margin: 0 10px;
-            }
+        footer {
+            position: relative;
+            overflow: visible;
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(251, 228, 249);
+            color: #ae61d8;
+            margin-top: 50px;
         }
-        .prawo{
+
+        .prawo {
             text-align: left;
             float:left;
         }
 
-        h3{
-            font-size: 35px;
-            color: #e874e7; 
-        }
-        .oferta{
+        .oferta {
             margin-top: 20px;
         }
         .oferta li{
@@ -161,14 +159,6 @@
             font-size:20px;
             margin-left:20px;
         }
-        .mapa{
-            float:right;
-            margin-left: 20px;
-        }
-        .Ukryte .flex{
-            display: flex;
-            justify-content: space-between;
-        }
 
         @keyframes stretch {
             0% {
@@ -177,6 +167,16 @@
             100% {
                 background-size: 100% 100%;
         }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
         }
 
         

@@ -13,7 +13,7 @@
 
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/przejscia.js"></script>
-    
+    <script src="../JavaScript/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 </head>
@@ -43,6 +43,26 @@
         </div>
 
     </header>
+    <div class="menu-container">
+        <!-- Pierwszy przycisk -->
+        <div class="menu-toggle" onclick="toggleButtons()">
+            <div class="menu-icon">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    
+        <!-- Drugi i trzeci przycisk -->
+        <div class="dropdown-buttons">
+            <a href="account.html" class="menu-item">
+                <img src="../Dodatki/account.png" alt="Account" class="menu-icon-img">
+            </a>
+            <a href="wishlist.html" class="menu-item">
+                <img src="../Dodatki/wishlist.png" alt="Wishlist" class="menu-icon-img">
+            </a>
+        </div>
+    </div>
     <main>
         <section class="Ukryte">
             <h2>Witamy w naszym cukrowym świecie!</h2>

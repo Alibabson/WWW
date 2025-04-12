@@ -105,6 +105,11 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
+.Ukryte .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 footer button {
     position: absolute;
     bottom: 20px; 
@@ -145,4 +150,78 @@ footer button {
 iframe{
     border: #ac55cd 5px solid;
     border-radius: 50px;
+}
+
+.mapa{
+    float:right;
+    margin-left: 20px;
+}
+
+/*///////////////////////////////////////////*/
+.menu-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-icon .dot {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dropdown-buttons {
+    display: none; /* Ukryte domyślnie */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dropdown-buttons.show {
+    display: flex; /* Widoczne po kliknięciu */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.1); /* Powiększenie przy najechaniu */
+}
+
+.menu-icon-img {
+    width: 30px;
+    height: 30px;
+    pointer-events: none; /* Wyłączenie interakcji z obrazkiem */
 }
