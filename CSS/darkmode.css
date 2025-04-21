@@ -66,4 +66,9 @@ body.dark-mode h2{
 body.dark-mode h3{
     color: #8b4a89;
 }
-
+body.dark-mode .guzik{
+    background-color:#5a296d;
+}
+body.dark-mode .menu{
+    background-color: #5a296d;
+}

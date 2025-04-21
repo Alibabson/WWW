@@ -158,70 +158,79 @@ iframe{
 }
 
 /*///////////////////////////////////////////*/
-.menu-container {
+.rozwijane_menu {
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 1000;
 }
 
-.menu-toggle {
+.menu {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #f5f5f5;
+    background-color: #f700ff;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.menu:hover {
+    transform: scale(0.8);
 }
 
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.menu-icon .dot {
-    width: 8px;
-    height: 8px;
-    background-color: black;
-    border-radius: 50%;
-}
-
-.dropdown-buttons {
-    display: none; /* Ukryte domyślnie */
+.rozwin-guzik {
+    display: none; 
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
-
-.dropdown-buttons.show {
-    display: flex; /* Widoczne po kliknięciu */
+.rozwin-guzik.ukryj{
+    animation: pojscie 0.5s ease-out;
 }
-
-.menu-item {
+.rozwin-guzik.pokaz{
+    display: flex;
+    overflow: visible;
+    animation: przyjscie 0.5s ease-out;
+}
+@keyframes przyjscie {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes pojscie {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+.guzik {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #f5f5f5;
+    background-color: #f700ff;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.3s;
 }
-
-.menu-item:hover {
-    transform: scale(1.1); /* Powiększenie przy najechaniu */
+.guzik:hover {
+    transform: scale(0.8);
 }
 
-.menu-icon-img {
+.menu_obrazek {
     width: 30px;
     height: 30px;
-    pointer-events: none; /* Wyłączenie interakcji z obrazkiem */
 }
