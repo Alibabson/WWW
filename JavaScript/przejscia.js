@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.initprzejscia = function() {
     const ukryte = document.querySelectorAll('.Ukryte');
     if (!ukryte) {
         throw new Error("Brak sekcji do animacji");
@@ -10,9 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(wej.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.01 });
 
     ukryte.forEach(section => {
         observer.observe(section);
     });
-});
+}
+
+document.addEventListener('DOMContentLoaded',() => {
+    window.initprzejscia();
+}
+);

@@ -7,6 +7,14 @@ fetch('../produkty.json')
     wyswietlProdukty(data);
   });
 
+function getLiked() {
+  return JSON.parse(localStorage.getItem('likedProducts') || '[]');
+}
+
+function setLiked(arr) {
+  localStorage.setItem('likedProducts', JSON.stringify(arr));
+}
+
 function wyswietlProdukty(data, fraza = '') {
   const listaa = document.getElementById('produkty-container');
   listaa.innerHTML = '';
@@ -18,7 +26,7 @@ function wyswietlProdukty(data, fraza = '') {
     if (Filtr.length === 0) return;
 
     const section = document.createElement('section');
-    //section.className = 'Ukryte';
+    section.className = 'Ukryte';
 
     const h2 = document.createElement('h2');
     h2.textContent = kategoria.kategoria;
@@ -40,9 +48,36 @@ function wyswietlProdukty(data, fraza = '') {
     section.appendChild(ul);
     listaa.appendChild(section);
   });
+
+  // Obsługa polubień
+  const liked = getLiked();
+  document.querySelectorAll('.like').forEach(button => {
+    const productName = button.parentElement.textContent.trim();
+    if (liked.includes(productName)) {
+      button.classList.add('active');
+    }
+    button.onclick = function() {
+      let likedNow = getLiked();
+      if (this.classList.toggle('active')) {
+        if (!likedNow.includes(productName)) likedNow.push(productName);
+      } else {
+        likedNow = likedNow.filter(n => n !== productName);
+      }
+      setLiked(likedNow);
+    };
+  });
+
+  // (opcjonalnie) ponów animacje wejścia:
+  if (window.initprzejscia) window.initprzejscia();
+}
+  ;
+  function getLiked() {
+  return JSON.parse(localStorage.getItem('likedProducts') || '[]');
 }
 
-// Obsługa wyszukiwania
+function setLiked(arr) {
+  localStorage.setItem('likedProducts', JSON.stringify(arr));
+}
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('szukaj');
   if (input) {

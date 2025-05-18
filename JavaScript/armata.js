@@ -9,3 +9,7 @@ const button = document.getElementById('armata');
       startVelocity: 120
     });
   });
+
+
+  //Skrpt ten jest  czysto podkradziony ze strony internetowej, która posiadała pełną instrukcję użyttkowania armaty
+  //Armatka sama w sobie jest jedynie dodatkiem, a poza grafiką nie ingerowaliśmy w nią bezpośrednio
