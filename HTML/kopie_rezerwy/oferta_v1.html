@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFERTA | CUKROWY KĄCIK</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/darkmode.css">
+    <link rel="stylesheet" href="../CSS/funkcje.css">
+
+    <link rel="icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik">
+    <link rel="apple-touch-icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik"> 
+
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/przejscia.js"></script>
+    <script src="../JavaScript/like.js"></script>
+    <script src="../JavaScript/menu.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <nav>
+                <ul>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="events.html">Kursy</a></li>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="contact.html">Kontakt i Adres</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            <h1><a href="index.html"><img src="../Dodatki/logo.png" width ="250" height="250" alt="logo firmy Cukrowy Kącik"></a></h1>
+        </div>
+
+        <div class="przelacznik">
+            <label class="switch">
+                <input type="checkbox" id="darkmode_lightmode">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+    </header>
+
+    <div class="rozwijane_menu">
+
+        <div class="menu" onclick="Przelacz()">
+            <img src="../Dodatki/menu.png" alt="Menu" class="menu_obrazek">
+        </div>
+    
+        <div class="rozwin-guzik">
+            <a href="account.html" class="guzik">
+                <img src="../Dodatki/account.png" alt="Account" class="menu_obrazek">
+            </a>
+            <a href="wishlist.html" class="guzik">
+                <img src="../Dodatki/wishlist.png" alt="Wishlist" class="menu_obrazek">
+            </a>
+        </div>
+    </div>
+
+    <main>
+    <section class="Ukryte">
+        <h2>Party Time!</h2>
+        <h3>Smaki tortów:</h3>
+        <ul class="oferta">
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Karmelowa Chmurka <br>
+                <div class="opis">  Delikatnie słodki smak karmelu z nutką wanilii – idealny do nastrojowych efektów.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Arbuzowy Chill <br>
+                <div class="opis">Soczysty, słodki i lekko chłodzący – idealny na letnie imprezy. </div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Cytrusowa Świeżość <br>
+                <div class="opis">Orzeźwiające połączenie cytryny i limonki z nutką kwaskowatości – idealne na energetyczne pokazy.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Czekoladowa Pokusa <br>
+                <div class="opis">Głęboki, aksamitny smak mlecznej czekolady – jak tabliczka słodyczy w dymnej odsłonie.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Malinowy Raj <br>
+                <div class="opis">Słodko-kwaśny smak malin z nutą wanilii – idealny do owocowych efektów.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Biała Magia <br>
+                <div class="opis">Delikatny smak białej czekolady umili każde spotkanie.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Orzechowa Fantazja <br>
+                <div class="opis">Połączenie laskowego orzecha i karmelu – nuty inspirowane kremem pralinkowym.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Miętowa Bryza  <br>
+                <div class="opis">Chłodny, lekko pikantny smak mięty – dla tych, którzy lubią oryginalność.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Kokosowa Laguna <br>
+                <div class="opis">Egzotyczna słodycz kokosa, która nadaje lekko tropikalny, ale kremowy akcent.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Toffi Marzenie <br>
+                <div class="opis">Maślany, karmelowy smak o ciepłym charakterze – jak cukierek z dzieciństwa.</div>
+            </li>
+    </section>
+
+    <section class="Ukryte">
+        <h2>Cukierkowy Catering!</h2>
+        <h3>Dowóz słodkości na każdą okazję:</h3>
+        <ul class="oferta">
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - ZESTAW „URODZINOWY MINI”  (10–15 osób)<br>
+                <div class="opis">Idealny na kameralne przyjęcia i urodziny dla dzieci i dorosłych.
+                    W zestawie:<br>
+                    - Mini cupcakes – 15 szt. (3 smaki: wanilia, czekolada, malina)<br>        
+                    - Cakepops – 12 szt. (kolorowe, z posypką) <br>                
+                    - Kruche ciasteczka dekoracyjne – 20 szt. (możliwość personalizacji)<br>     
+                    - Małe bezy – 30 szt. (mix kolorów)<br>      
+                    - Słodki lemoniadownik z sokiem owocowym – 3 litry<br>
+                </div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Zestaw „CZEKOLADOWE LOVE”  (15–20 osób)<br>
+                <div class="opis">Dla fanów słodkości w wersji mocno kakaowej.
+                    W zestawie:<br>
+                    - Brownie w porcjach – 15 szt.<br>        
+                    - Praliny czekoladowe – 30 szt.<br>        
+                    - Ciasteczka z kawałkami czekolady – 20 szt.<br>        
+                    - Desery w kubeczkach: czekolada z musem waniliowym – 10 szt. <br>  
+                    - Kawa mrożona lub gorąca czekolada – 3 litry <br>       
+                </div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                -  Zestaw „WESELNY CANDY BAR”  (30–50 osób)<br>
+                <div class="opis">Elegancka, stylowa opcja z dekoracją stołu – hit na każdej sali weselnej!
+                    W zestawie:<br>
+                    - Mini tartaletki owocowe i z kremem – 40 szt.<br>        
+                    - Cake pops – 25 szt.<br>        
+                    - Ciasteczka z lukrem królewskim – 40 szt. (np. z inicjałami lub datą)<br>        
+                    - Makaroniki – 30 szt.<br>  
+                    - Bezy - 50 szt.<br>
+                    - Słodki napój w dzbankach + kieliszki do serwisu – 15 litrów<br>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Ukryte">
+        <h2>Dodatki!</h2>
+        <h3>Nie tylko cukier ważny - mamy o wiele więcej!</h3>
+        <ul class="oferta">
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button> 
+                - Balony z helem <br>
+                <div class="opis">Balony w różnych kolorach i kształtach, które dodadzą uroku każdej imprezie.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Dekoracje stołów  <br>
+                <div class="opis">Piękne dekoracje stołów na każdą okazję. Możliwość personalizacji.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Animator <br>
+                <div class="opis">Animatorzy, którzy umilą czas dzieciom podczas imprez. Możliwość personalizacji.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - Fotobudka  <br>
+                <div class="opis">Fotobudka z różnymi rekwizytami, która zapewni świetną zabawę i pamiątkowe zdjęcia.</div>
+            </li>
+            <li>
+                <button class="like">
+                    <span class="serduszko">♡</span>
+                </button>
+                - DJ <br>
+                <div class="opis">DJ, który zadba o odpowiednią atmosferę podczas imprezy. Możliwość personalizacji.</div>
+            </li>
+    </section>
+    </main>
+
+    <footer>
+        <button id="armata">
+            <img src="../Dodatki/armatka.png" width="100" height="100" alt="Aramtka">
+          </button>
+        <p>&copy; 2025 Cukrowy Kącik. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="../JavaScript/armata.js"></script>
+</body>
+</html>
