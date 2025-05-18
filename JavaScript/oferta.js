@@ -49,7 +49,7 @@ function wyswietlProdukty(data, fraza = '') {
     listaa.appendChild(section);
   });
 
-  // Obsługa polubień
+  const nazwa_prod = produkt.nazwa;
   const liked = getLiked();
   document.querySelectorAll('.like').forEach(button => {
     const productName = button.parentElement.textContent.trim();
