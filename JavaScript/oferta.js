@@ -38,10 +38,10 @@ function wyswietlProdukty(data, fraza = '') {
     Filtr.forEach(produkt => {
       const li = document.createElement('li');
       li.innerHTML = `
-        <button class="like"><span class="serduszko">♡</span></button>
-        - ${produkt.nazwa ?? ''} <br>
-        <div class="opis">${(produkt.opis ?? '').replace(/\n/g, '<br>')}</div>
-      `;
+      <button class="like"><span class="serduszko">♡</span></button>
+      <span class="nazwa-produktu">♡ ${produkt.nazwa ?? ''}</span> <br>
+      <div class="opis">${(produkt.opis ?? '').replace(/\n/g, '<br>')}</div>
+  `;
       ul.appendChild(li);
     });
 
@@ -49,10 +49,9 @@ function wyswietlProdukty(data, fraza = '') {
     listaa.appendChild(section);
   });
 
-  const nazwa_prod = produkt.nazwa;
   const liked = getLiked();
   document.querySelectorAll('.like').forEach(button => {
-    const productName = button.parentElement.textContent.trim();
+    const productName = button.parentElement.querySelector('.nazwa-produktu').textContent.trim();
     if (liked.includes(productName)) {
       button.classList.add('active');
     }

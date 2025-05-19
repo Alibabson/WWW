@@ -72,3 +72,6 @@ body.dark-mode .guzik{
 body.dark-mode .menu{
     background-color: #5a296d;
 }
+body.dark-mode #szukaj{
+    background-color: #3E312b;
+}
