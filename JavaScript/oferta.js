@@ -9,15 +9,15 @@ fetch('../produkty.json')
 
 function getLiked() {
   return JSON.parse(localStorage.getItem('likedProducts') || '[]');
-}
+} //zbiór polubionych - przyda sie do wishlisty
 
 function setLiked(arr) {
   localStorage.setItem('likedProducts', JSON.stringify(arr));
-}
+} //LocalStorage polubionych
 
 function wyswietlProdukty(data, fraza = '') {
   const listaa = document.getElementById('produkty-container');
-  listaa.innerHTML = '';
+  listaa.innerHTML = '';   //bez tego nam nie czyści strony 
   data.forEach(kategoria => {
     const Filtr = kategoria.produkty.filter(produkt =>
       (produkt.nazwa && produkt.nazwa.toLowerCase().includes(fraza.toLowerCase())) ||
@@ -27,13 +27,16 @@ function wyswietlProdukty(data, fraza = '') {
 
     const section = document.createElement('section');
     section.className = 'Ukryte';
+    //każda kategoria ma swoją sekcję - ukryte bo uwielbiam tą animację
 
     const h2 = document.createElement('h2');
     h2.textContent = kategoria.kategoria;
     section.appendChild(h2);
+    //nagłowek z nazwą
 
     const ul = document.createElement('ul');
     ul.className = 'oferta';
+    //lista produktów
 
     Filtr.forEach(produkt => {
       const li = document.createElement('li');

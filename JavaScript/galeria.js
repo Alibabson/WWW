@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {           //DOM - czekanie, aż strona się załaduje
     
-    const Zdjecia = document.querySelectorAll('.gallery-grid img');
+    const Zdjecia = document.querySelectorAll('.gallery-grid img');  
     const lightbox = document.getElementById('lightbox');
     const lightbox_zdj = document.getElementById('lightbox-img');
     const zamknij = document.getElementById('close');
@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.classList.add('hidden');
     });
 });
-
 
 //Lightbox - upiekszenie galerii zdjęć:
 // Poprzez klikniecie na zdjęcie w galerii, otwiera się powiększone zdjęcie w lightboxie. My ustawiliśmy, aby zdjęcie i cień wypełniało dostępną sekcję.
