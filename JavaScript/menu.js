@@ -16,3 +16,7 @@ function Przelacz() {
         guzik.classList.add('pokaz');
     }
 }
+
+//switch do rozwijanego menu
+//W momencie kliknięcia w przycisk, zmienia się jego klasa na 'ukryj' oraz po 0.5s znika z widoku.
+//musi znikać inaczej animacja nie działa
