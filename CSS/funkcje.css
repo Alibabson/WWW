@@ -244,3 +244,46 @@ iframe{
     width: 50px;
     height: 50px;
 }
+/* Kontener formularza */
+.form_text {
+    background: rgb(251, 228, 249);
+    border-radius: 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    padding: 40px 30px;
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    margin-top: -250px;
+    position: relative;
+
+}
+
+/* Pola formularza */
+.form_text input[type="email"],
+.form_text input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ae61d8;
+    font-size: 1em;
+}
+
+/* Przyciski formularza */
+.form_text input[type="submit"],
+.form_text button {
+    background: #ae61d8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background 0.3s;
+}
+
+.form_text input[type="submit"]:hover,
+.form_text button:hover {
+    background: #af5de5;
+}
