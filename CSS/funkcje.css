@@ -253,7 +253,7 @@ iframe{
     max-width: 400px;
     margin: 10px auto;
     text-align: center;
-    margin-top: -250px;
+    margin-top: -250px; 
     position: relative;
 
 }
@@ -280,7 +280,6 @@ iframe{
     font-size: 1.1em;
     cursor: pointer;
     margin: 10px 5px;
-    transition: background 0.3s;
 }
 
 .form_text input[type="submit"]:hover,
