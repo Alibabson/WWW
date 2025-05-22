@@ -4,6 +4,9 @@
     max-width: 1000px;
     font-size: 24px;
     box-sizing: border-box;
+    margin-top: -250px;
+    position: relative;
+
 }
 form {
     width: 100%;
@@ -62,4 +65,9 @@ select {
 }
 select:focus{
     border-color: #3fc4e2;
+}
+.formularrrz a{
+    font-size: 50px;
+    text-decoration: none;
+    color:#ae61d8;
 }

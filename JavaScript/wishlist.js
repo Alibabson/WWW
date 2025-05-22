@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const liked = JSON.parse(localStorage.getItem('likedProducts') || '[]');
-    const ukrytaSekcja = document.querySelector('.Ukryte'); // Znajdź istniejącą sekcję z klasą 'Ukryte'
+    const ukrytaSekcja = document.querySelector('.Ukryte');
     ukrytaSekcja.style.margin = "40px";
     ukrytaSekcja.style.marginTop = "-250px";
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ul.style.fontSize = "1.2em";
         liked.forEach(nazwa => {
             const li = document.createElement('li');
-            li.textContent = nazwa; // tylko tytuł (nazwa)
+            li.textContent = nazwa;
             ul.appendChild(li);
         });
         ukrytaSekcja.appendChild(ul);
