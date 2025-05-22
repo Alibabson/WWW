@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LISTA ŻYCZEŃ | CUKROWY KĄCIK</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/darkmode.css">
+    <link rel="stylesheet" href="../CSS/funkcje.css">
+
+    <link rel="icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik">
+    <link rel="apple-touch-icon" href="../Dodatki/logo.png" type="image/x-icon" alt="logo firmy Cukrowy Kącik"> 
+
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/przejscia.js"></script>
+    <script src="../JavaScript/menu.js"></script>
+    <script src="../JavaScript/wishlist.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <nav>
+                <ul>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="events.html">Kursy</a></li>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="contact.html">Kontakt i Adres</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            <h1><a href="index.html"><img src="../Dodatki/logo.png" width ="250" height="250" alt="logo firmy Cukrowy Kącik"></a></h1>
+        </div>
+
+        <div class="przelacznik">
+            <label class="switch">
+                <input type="checkbox" id="darkmode_lightmode">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="rozwijane_menu">
+
+            <div class="menu" onclick="Przelacz()">
+                <img src="../Dodatki/menu.png" alt="Menu" class="menu_obrazek">
+            </div>
+        
+            <div class="rozwin-guzik">
+                <a href="account.html" class="guzik">
+                    <img src="../Dodatki/account.png" alt="Account" class="menu_obrazek">
+                </a>
+                <a href="wishlist.html" class="guzik">
+                    <img src="../Dodatki/wishlist.png" alt="Wishlist" class="menu_obrazek">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <section class="Ukryte">
+        <!-- Elementy zostaną dodane tutaj przez JavaScript -->
+    </section>
+    <footer>
+        <button id="armata">
+            <img src="../Dodatki/armatka.png" width="100" height="100" alt="Aramtka">
+          </button>
+        <p>&copy; 2025 Cukrowy Kącik. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="../JavaScript/armata.js"></script>
+</body>
+</html>
