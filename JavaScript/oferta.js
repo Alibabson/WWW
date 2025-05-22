@@ -7,13 +7,13 @@ fetch('../produkty.json')
     wyswietlProdukty(data);
   });
 
-function getLiked() {
+function get_polub() {
   return JSON.parse(localStorage.getItem('likedProducts') || '[]');
-} //zbiór polubionych - przyda sie do wishlisty
+}
 
-function setLiked(arr) {
+function set_Polub(arr) {
   localStorage.setItem('likedProducts', JSON.stringify(arr));
-} //LocalStorage polubionych
+}
 
 function wyswietlProdukty(data, fraza = '') {
   const listaa = document.getElementById('produkty-container');
@@ -52,34 +52,25 @@ function wyswietlProdukty(data, fraza = '') {
     listaa.appendChild(section);
   });
 
-  const liked = getLiked();
+  const liked = get_polub();
   document.querySelectorAll('.like').forEach(button => {
     const productName = button.parentElement.querySelector('.nazwa-produktu').textContent.trim();
     if (liked.includes(productName)) {
       button.classList.add('active');
     }
     button.onclick = function() {
-      let likedNow = getLiked();
+      let likedNow = get_polub();
       if (this.classList.toggle('active')) {
         if (!likedNow.includes(productName)) likedNow.push(productName);
       } else {
         likedNow = likedNow.filter(n => n !== productName);
       }
-      setLiked(likedNow);
+      set_Polub(likedNow);
     };
   });
 
-  // (opcjonalnie) ponów animacje wejścia:
   if (window.initprzejscia) window.initprzejscia();
-}
-  ;
-  function getLiked() {
-  return JSON.parse(localStorage.getItem('likedProducts') || '[]');
-}
-
-function setLiked(arr) {
-  localStorage.setItem('likedProducts', JSON.stringify(arr));
-}
+};
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('szukaj');
   if (input) {
