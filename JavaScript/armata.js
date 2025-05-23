@@ -1,6 +1,4 @@
-const button = document.getElementById('armata');
-
-  button.addEventListener('click', () => {
+  function armata(){
     confetti({
       origin: { x: 0, y: 1.1 },
       angle: 50,
@@ -8,7 +6,9 @@ const button = document.getElementById('armata');
       particleCount: 1000,
       startVelocity: 120
     });
-  });
+    const audio = document.getElementById('confetti');
+    audio.play();
+  }
 
 
   //Skrpt ten jest  czysto podkradziony ze strony internetowej, która posiadała pełną instrukcję użytkowania armaty
