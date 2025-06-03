@@ -12,4 +12,4 @@
 
 
   //Skrpt ten jest  czysto podkradziony ze strony internetowej, która posiadała pełną instrukcję użytkowania armaty
-  //Armatka sama w sobie jest jedynie dodatkiem, a poza grafiką nie ingerowaliśmy w nią bezpośrednio
+  //Armatka sama w sobie jest jedynie dodatkiem, a poza grafiką i audio nie ingerowaliśmy w nią bezpośrednio

@@ -69,7 +69,7 @@ function wyswietlProdukty(data, fraza = '') {
     };
   });
 
-  if (window.initprzejscia) window.initprzejscia();
+  if (window.initprzejscia) window.initprzejscia();   //bez tego nie odpala
 };
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('szukaj');
