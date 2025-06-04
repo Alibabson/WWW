@@ -4,17 +4,18 @@
     max-width: 1000px;
     font-size: 24px;
     box-sizing: border-box;
-    margin-top: -250px;
+    margin-top: -300px;
     position: relative;
-
 }
+
 form {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 5px solid #ae61d8;
     border-radius: 35px;
     background-color: #cc9de6;
+    border: 5px solid #ae61d8;
+    box-shadow: 0 0 10px rgba(174, 97, 216, 0.5);
 }
 .form_text {
     font-size: 24px;
@@ -38,34 +39,34 @@ form input {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 2px solid #cc9de6;
     border-radius: 8px;
     background-color: #e3bbf8;
+    border: none;
+    cursor: pointer;
 }
-form input[type="radio"]    {
+form input:focus {
+    outline: none;
+    border: 2px solid #ae61d8;
+    box-shadow: 0 0 5px rgba(174, 97, 216, 0.5);
+}
+
+form input[type="radio"], 
+form input[type="checkbox"]{
     width: auto;
     margin-right: 10px;
     vertical-align: middle;
-    cursor: pointer;
 }
-form input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-    vertical-align: middle;
-    cursor: pointer;
-}
+
 select {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 2px solid #cc9de6;
+    border: none;
     border-radius: 8px;
     background-color: #e3bbf8;
-    
+    cursor: pointer;
 }
-select:focus{
-    border-color: #3fc4e2;
-}
+
 .formularrrz a{
     font-size: 50px;
     text-decoration: none;

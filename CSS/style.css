@@ -5,6 +5,7 @@
             font-family: 'Ink Free';
             overflow-x: hidden;
             font-weight: bold;
+         
         }
         
         body {
@@ -12,25 +13,21 @@
         }
         
         header {
-            background-color: #ffffff;
             background-image: url('../Dodatki/polewa_dia4.png');
-            min-height: 700px;
+            height: 700px;
             background-size: 100% 80%;
             background-position: center top;
             background-repeat: no-repeat;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
             animation: stretch 6s ease-out forwards;
             position: relative;
-            overflow: visible;
             margin-bottom: 100px;
             
         }        
         .header-text {
-            max-width: 1200px;
+            width: 1200px;
             margin: 0 auto;
-            display: flex;
-            flex-direction: column;
             align-items: center;
         }
         
@@ -38,22 +35,20 @@
             display: flex;
             justify-content: center;
             list-style: none;
-            gap: 30px;
-        }     
-        nav ul li {
-            margin: 0 15px;
-        }        
+            gap: 70px;
+        }         
         nav ul li a {
             text-decoration: none;
             color: #af5de5;
-            font-weight: bold;
             font-size: 1.5rem;
             transition: color 0.3s;
         }            
-        nav ul li a:hover {
+
+          header a:hover {
             color: #ffffff;
+             transition: color 0.3s;
         }
-        
+
         h1 {
             font-size: 2.5rem;
             color: #ae61d8;
@@ -62,11 +57,7 @@
             text-align: center;
             width: 100%;
         }
-        header a:hover {
-            color: #ffffff;
-             transition: color 0.3s;
-        }
-                
+      
         main {
             max-width: 1200px;
             margin: 0px auto;
@@ -74,7 +65,6 @@
             margin-top: -250px;
         }     
   
-
         section {
             margin-bottom: 100px;
             padding: 20px;
@@ -86,7 +76,6 @@
         h2 {
             color: #af5de5;
             margin-bottom: 15px;
-            text-decoration: none;
             font-size: 40px;
         }       
         p {
@@ -114,7 +103,6 @@
 
         footer {
             position: relative;
-            overflow: visible;
             text-align: center;
             padding: 20px;
             background-color: rgb(251, 228, 249);
@@ -126,13 +114,29 @@
             text-align: left;
             float:left;
         }
+
+        #szukaj{
+          color: #ac55cd;
+          margin-top: 100px;
+          height: 40px;
+          width: 200px;
+          border-radius: 50px;
+          background-color: #FBE4F9;
+          padding: 20px; 
+          font-size: 15px;
+          border: 1px solid #946c59;  
+        }
+
+        #szukaj:focus {
+        outline: none;
+        border: 1px solid #af5de5;  
+        }
         
         .oferta li{
             text-decoration: none;
             color: #af5de5;
-            overflow: visible;
             text-align: left;
-            border-bottom: 1px solid #381a0c;
+            border-bottom: 1px solid #946c59;
             margin-bottom: 10px;
             font-size: 30px;
             position: relative;

@@ -59,6 +59,7 @@ body.dark-mode .opis{
 }
 body.dark-mode .oferta li{
     color: #8c54b4;
+     border-bottom: 1px solid #381a0c;
 }
 body.dark-mode h2{
     color: #8c54b4;
@@ -74,4 +75,9 @@ body.dark-mode .menu{
 }
 body.dark-mode #szukaj{
     background-color: #3E312b;
+    border: 1px solid #381a0c;
+}
+body.dark-mode #szukaj:focus{
+    border: 1px solid #8c54b4;
+    color : #8c54b4;
 }

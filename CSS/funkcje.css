@@ -24,7 +24,7 @@
     width: 19px;
     left: 3px;
     bottom: 3px;
-    background-color: white;
+    background-color: rgb(230, 210, 112);
     transition: 0.4s;
     border-radius: 50%;
 }
@@ -35,19 +35,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(25px);
-}
-
-/*///////////////////////////////////////////*/
-
-#szukaj
-{
-    color: #ac55cd;
-    margin-top: 100px;
-    height: 40px;
-    width: 200px;
-    border-radius: 50px;
-    background-color: #FBE4F9;
-    font-size: 15px;
+    background-color: rgb(177, 170, 131);
 }
 
 /*///////////////////////////////////////////*/
