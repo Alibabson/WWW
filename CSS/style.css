@@ -157,14 +157,36 @@
         }
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            nav ul li {
-                margin: 0 10px;
-            }
-        }
+        @media (max-width: 768px) {   /*obsługa na telefon*/
+    header {
+        height: auto;
+        width: auto;
+        margin-bottom: 250px;
+        padding: 10px;
+    }
+    .header-text {
+        width: 100%;
+        padding: 0 5px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 3px;
+        padding: 0;
+    }
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 3px 0;
+    }
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    section {
+        margin-bottom: 40px;
+    }
+}
 
         
